@@ -10,6 +10,8 @@ The following table lists the versions of Java available, and the parent Java im
 | 17            | eclipse-temurin:17-jammy |
 | 21            | eclipse-temurin:21-jammy |
 | 21            | eclipse-temurin:21-noble |
+| 25            | eclipse-temurin:25-jammy |
+| 25            | eclipse-temurin:25-noble |
 
 [Examples](./example) are provided to show how parent images can be extended for different types of services. These should be a good starting point for building Java services conforming to DEFRA standards.
 
@@ -47,6 +49,7 @@ Other tags are also pushed to allow pointing at the latest image for that jdk/sd
 - `jre-11`, `jre-17`, `jre-21` - Points to the latest JRE image for that Java major version
 - `jre-21-jammy` - Points to the latest JRE image whilst targetting an older OS image.
 - `jdk-21-jammy` - Points to the latest JDK image whilst targetting an older OS image.
+- `jdk-25`, `jre-25` - Points to the 25.0.4.1_1 JDK image for Java 25
 
 On commit GitHub Actions will build the `java` image for the Java versions listed in the [image-matrix.json](image-matrix.json) file, and perform a vulnerability scan, as described below.
 
